@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*top button */
+#top-btn{
+    position:fixed;
+    right:20px;
+    bottom:15px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+/*top button*/
+
+.header-font{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.inner-font{
+    font-family: 'Stoke', serif;
+    color:black;
+}
+
+#logo{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color:white;
+}
+
+#nav-bar{
+    box-shadow: 5px 6px 8px #888888;
+}
+
+#attraction{
+    border:1px solid rgb(24, 23, 23);
+    box-shadow: 5px 3px 0px 0px gray;
+    border-radius: 20px;
+}
+
+.jumbotron{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:470px;
+}
+
+#head-txt{
+    margin-top: 300px;
+}
+
+#search-bar-con{
+    width:500px;
+    z-index: 1000;
+    margin-top: 30px;
+}
+
+.input-group input{
+    height:70px;
+}
+
+#search-icon-con{
+    width:70px !important;
+}
+
+#country{
+    border:none !important;
+    margin-left: 30% !important;
+}
+
+
+.site-seen img{
+    width:300px;
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-seen img:hover{
+    margin-top:3px;
+    transition: 0.1s;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.site-seen-text{
+    margin-top: 100px;
+}
+
+
+.inspiration-head{
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 135px !important;
+    z-index: 2000;
+}
+
+.travel-type{
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 150px !important;
+}
+/*slider */
+
+.slider{
+    width:80%;
+    margin:0 auto;
+}
+
+.slick-slide {
+    margin:0px 20px; 
+}
+
+.slick-slide img{
+    width: 100%;
+}
+
+.slick-prev:before,.slick-next:before{
+    color:red !important;
+    font-size: 40px !important;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+
+.slick-prev{
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.slick-next{
+    margin-top: -20px;
+}
+
+.slick-active{
+    opacity: 0.5;
+}
+
+.slick-current{
+    opacity: 1;
+}
+
+/*slider*/
+
+/*slider text*/
+.slider-txt{
+    position: relative;
+    margin-top:-130px
+}
+
+.recommended-attractions-con img:hover{
+    box-shadow: 2px 3px 2px 3px #888888;
+}
+
+/*slider text*/
+/*footer*/
+/*social media icons*/
+
+
+#facebook:hover{
+    background-color: #4F67A4;
+    color:white;
+    border:1px solid #4F67A4;
+}
+#insta:hover{
+    background-color: #ccc;
+    color:rgb(224, 21, 21);
+    border:1px solid #ccc;
+}
+#youtube:hover{
+    background-color: black;
+    color: rgb(196, 46, 46);
+    border:1px solid black;
+}
+#twitter:hover{
+    background-color: #1DA1F2;
+    color: rgb(233, 223, 223);
+    border:1px solid #1DA1F2;
+}
+/*social site*/
+/*my icon*/
+.my-icon{
+    width:40px;
+    height:40px;
+    border:1px solid #ccc;
+    padding:5px;
+    margin-top:10px;
+    font-size:30px !important;
+}
+/*footer*/

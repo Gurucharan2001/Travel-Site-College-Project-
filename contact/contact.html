@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Fredoka+One|Playfair+Display+Stoke&display=swap" rel="stylesheet">
+    <script src="js/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<button class="btn btn-primary" id="top-btn">
+    <i class="fa fa-chevron-up"></i><br />Back to Top
+</button>
+    <!--Nav  bar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light mt-0 sticky-top mb-3" id="nav-bar">
+        <a href="../index.html" class="navbar-brand">
+            <img src="img/myLogo.png" alt="logo" id="logo" />
+                Your Travels
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-slider">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-slider">
+            <ul class="navbar-nav text-dark float-left ml-3">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../attractions/attraction.html" class="nav-link">Attractions</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="contact">Contact</a></li>
+                <li class="nav-item"><a href="client/client.html" class="nav-link">Client</a></li>
+                <li class="nav-item"><a href="../Signup/signup.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="../Login/login.html" class="nav-link">Sign In</a></li>
+            </ul>
+            <ul class="navbar-nav text-light ml-auto">
+                <li class="nav-item" id="search-ele">
+                    <form>
+                        <div class="input-group mt-2">
+                            <input type="search" name="search" class="form-control border border-danger border-right-0" placeholder="Search Here" />
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-danger text-light">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav bar-->
+
+    <div class="container-fluid jumbotron jumbotron-fluid text-center mb-3">
+        <h1 class="header-font text-light" id="txt-head">How Can We Help You Today?</h1>
+    </div>
+
+    <!--contact-->
+    <div class="container-fluid mb-4">
+    <div class="row text-center">
+        <div class="col-md-4 p-3">
+            <h1 class="header-font">Our Location</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="add-icons mx-auto text-center">
+                            <i class="fa fa-map-marker " style="font-size:37px;color:#4e66f8"></i><br />
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h5 class="inner-font">
+                            <address>
+                                VILL+P.O:-Bhemua,P.S:-Sabang,<br />Dist:-Paschim Medinipur,West Bengal
+                            </address>
+                        </h5>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 p-3">
+            <h1 class="header-font">Contact Number</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="add-icons mx-auto text-center">
+                        <i class="fa fa-phone" style="font-size:30px;color:#4e66f8"></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h5 class="inner-font">
+                        7076431876,<br />OR<br />
+                        6296624746
+                    </h5>
+                </div>            
+            </div>
+        </div>
+        <div class="col-md-4 p-3">
+            <h1 class="header-font">Email</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="add-icons mx-auto text-center">
+                        <i class="	fa fa-envelope-o" style="font-size:30px;color:#4e66f8"></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h5 class="inner-font">
+                        togmaparu@gmail.com(Personal),<br />OR<br />
+                        gmaparu.cse18@chitkarauniversity.edu.in(Official)
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- contact  -->
+
+    <!--contact form -->
+        <div class="container-fluid text-center p-4" style="background-color:#f8f9fa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header-font float-left mb-4">Contact Form</h3>
+                        <form autocomplete="off">
+                        <div class="row mb-3" style="clear: left;">
+                            <div class="col-md-6">
+                                <p class="inner-font float-left m-0">YOUR FIRSTNAME<sup style="color:red">*</sup></p>
+                                <input type="text" class="form-control" placeholder="Enter Your Firstname" required="required" id="firstname" />
+                            </div>
+                            <div class="col-md-6">
+                                <p class="inner-font float-left m-0">YOUR LASTNAME<sup style="color:red">*</sup></p>
+                                <input type="text" class="form-control" placeholder="Enter Your Lastname" required="required" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <p class="inner-font float-left m-0">YOUR EMAIL<sup style="color:red">*</sup></p>
+                                <input type="text" class="form-control" placeholder="Enter Your Email" required="required" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <p class="inner-font float-left m-0">YOUR MESSAGE FOR US<sup style="color:red">*</sup></p>
+                                <textarea name="message" class="form-control" cols="10" rows="5" placeholder="Enter Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-light inner-font float-left border border-1 border-primary" type="submit" id="send-message-btn" style="letter-spacing: 2px;font-weight: bold;color:blue" data-toggle="modal" data-target="#contact-modal">
+                                    SEND MESSAGE
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6" style="margin-top:70px">
+                        <p class="inner-font" style="letter-spacing: 1px;text-align: justify;">Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.</p>
+                        <p class="inner-font" style="letter-spacing: 1px;text-align: justify;">Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--contact form-->
+<!--footer-->
+  <div class="container-fluid text-center" style="background-color:#ccc;">
+    <div class="row">
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-2">YOUR TRAVEL</h4>
+        <p class="inner-font" style="letter-spacing: 1px;">A New Sky ,A New Life</p>
+        <div class="mt-2">
+          <a href="https://www.facebook.com/gurucharan.maparu.3"><i class="fa fa-facebook ml-3 my-icon text-dark" id="facebook"></i></a>
+          <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en"><i class="fa fa-instagram ml-3 my-icon text-dark" id="insta"></i></a>
+          <a href="https://www.youtube.com/channel/UCaf_qQIZvak2gDGPSODWeRw?view_as=subscriber"><i class="fa fa-youtube ml-3 text-dark my-icon" id="youtube"></i></a>
+          <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter ml-3 my-icon text-dark" id="twitter"></i></a>
+          </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-3">RENTALS</h4>
+  
+        <p><a class="anchor text-dark mb-0" href="#">Rooms</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Map on top</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Side map</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">No map</a></p>
+  
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-3">PAGES</h4>
+  
+        <a class="anchor text-dark mb-0" href="#">Comparison</a>
+        <p><a class="anchor text-dark mb-0" href="#">Team</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Contact</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Pricing</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Text page</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">F.A.Q.s</a></p>
+  
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font">DAILY OFFERS & DISCOUNTS</h4>
+        <p class="inner-font">We have varai spacial offer in every day</p>
+        <form>
+            <input type="email" placeholder="Your Email Address" required class="form-control" />
+              <button type="submit" class="btn btn-info float-right mt-3">
+                SEND
+                <i class="fa fa-send-o" style="font-size:15px"></i>
+              </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--footer-->
+
+  <!--modal-->
+
+  <div class="modal animated fadeIn slower mt-5" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h2 class="modal-title" id="exampleModalLabel" class="header-font">YOUR TRAVEL</h2>
+          <p class="inner-font">A New Sky ,A New Life</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="header-font" id="thanks-user"></h5> 
+          <span class="letter-space">We'll contact you as soon as possible</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="../Signup/signup.html" class="btn btn-primary" data-target="#resister">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal-->
+
+  <script>
+    function username(){
+        var name = document.getElementById("firstname").value;
+        var thanks_user = document.getElementById("thanks-user");
+        thanks_user.innerHTML = "Thanks Mr."+" "+ name;
+    }
+    document.querySelector("#send-message-btn").onclick = function(e){
+        e.preventDefault();
+        username();
+    }
+</script>
+</body>
+</html>

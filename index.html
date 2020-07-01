@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Fredoka+One|Playfair+Display+Stoke&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+<button class="btn btn-primary" id="top-btn">
+    <i class="fa fa-chevron-up"></i><br />Back to Top
+</button>
+    <!--Nav  bar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light mt-0 sticky-top mb-3" id="nav-bar">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/myLogo.png" alt="logo" id="logo" />
+                Your Travels
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-slider">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-slider">
+            <ul class="navbar-nav text-dark float-left ml-3">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="home">Home</a></li>
+                <li class="nav-item"><a href="attractions/attraction.html" class="nav-link">Attractions</a></li>
+                <li class="nav-item"><a href="contact/contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="Signup/signup.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="Login/login.html" class="nav-link">Sign In</a></li>
+            </ul>
+            <ul class="navbar-nav text-light ml-auto">
+                <li class="nav-item d-none" id="search-ele">
+                    <form>
+                        <div class="input-group mt-2">
+                            <input type="search" name="search" class="form-control border border-danger border-right-0" placeholder="Search Here" />
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-danger text-light">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-search text-light" style="font-size:25px" id="search"></i>
+                    <i class="fa fa-close text-light d-none" style="font-size:25px" id="close"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav bar-->
+
+    <!--slider-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade w-100 mb-5" data-ride="carousel" data-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block" src="img/tourImg1.jpg" alt="First slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/to.jpg" alt="Second slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg3.jpg" alt="Third slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg4.jpg" alt="fourth slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg5.jpg" alt="fourth slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg6.jpg" alt="fourth slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg7.jpg" alt="fourth slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="img/tourImg8.jpg" alt="fourth slide" style="width:600px;background-size: cover;">
+            <div class="carousel-caption">
+              <h1 class="header-font">WELCOME TO YOUR TRAVEL</h1>
+              <h4 class="inner-font" style="color:deeppink;letter-spacing:2px">THE BEST HOLIDAY EXPERIENCE</h4>
+              <form>
+                <div class="form-group">
+                  <input type="search" placeholder="Search Your Plan Here" class="form-control float-left mb-2" required="required" /> 
+                </div>
+                <button type="submit" class="btn btn-danger border border-danger float-right">Search
+                  <i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--end Slider-->
+
+<!--Start body-->
+      <div class="container-fluid text-center" style="background-color: #f8f9fa;">
+        <h4 class="inner-font" style="color:deeppink;letter-spacing: 2px;">ONE-OF-A-KIND VACATION RENTALS</h4>
+        <h1 class="header-font mb-4">Booking with us is easy</h1>
+        <div class="row text-center">
+          <div class="col-md-4 mb-2">
+            <center>
+            <div class="icon-box">
+              <i class="fa fa-heart-o" style="font-size:30px;color:#4e66f8"></i>
+            </div>
+            </center>
+            <h4 class="inner-font" style="font-weight: bold;">Find the perfect rental</h4>
+            <p class="inner-font" style="letter-spacing: 1px;color:#c8c1bd;">One morning, when Gregor Samsa woke from troubled dreams,<br /> he found himself transformed in his bed in.</p>
+          </div>
+          <div class="col-md-4 mb-2">
+            <center>
+            <div class="icon-box">
+              <i class="fa fa-credit-card" style="font-size:30px;color:#4e66f8"></i>
+            </div>
+            </center>
+            <h4 class="inner-font" style="font-weight: bold;">Book with confidence</h4>
+            <p class="inner-font" style="letter-spacing: 1px;color:#c8c1bd;">The bedding was hardly able to cover it and seemed ready to<br /> slide off any moment. His many legs, pit.</p>
+          </div>
+          <div class="col-md-4 mb-2">
+            <center>
+            <div class="icon-box">
+              <i class="fa fa-heart-o" style="font-size:30px;color:#4e66f8"></i>
+            </div>
+            </center>
+            <h4 class="inner-font" style="font-weight: bold;">Enjoy your vacation</h4>
+            <p class="inner-font" style="letter-spacing: 1px;color:#c8c1bd;">His room, a proper human room although a little too small, lay<br /> peacefully between its four familiar.</p>
+          </div>
+        </div>
+      </div>
+<!--end body-->
+
+<div class="container-fluid jumbotron jumbotron-fluid text-center mb-3 animated fadeIn slower">
+  <h1 class="header-font text-light float-left mb-5 mx-5" id="ready-txt">Ready for your next holidays?</h1>
+  <a class="btn btn-light float-left mt-5 mx-5" href="#" style="letter-spacing: 1px;clear:left;" id="get-btn">GET STARTED</a>
+</div>
+
+
+<!--customer say-->
+<div class="container-fluid text-center">
+  <h1 class="header-font mb-5">Our dear customers said about us</h1>
+  <div class="carousel slide mb-5" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner">
+      <!--1st item-->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="mx-auto" id="first-client-pic">
+
+                </div>
+                <h5 class="client-name">Mr. Charles</h5>
+                <p class="inner-font" style="color:#c8c1bd">We can’t thank you enough. We had such a fantastic honeymoon at The Kahala! Everything was wonderful. What a beautiful spot, gorgeous beach, lovely ambiance, great customer service.... delicious food. Thank you very much.</p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="mx-auto" id="second-client-pic">
+                </div>
+                <h5 class="client-name">Mr. George Lippi</h5>
+                <p class="inner-font" style="color:#c8c1bd">Italy was magical with my granddaughters.  The only changes I would make if I were to to it again would be one more night in Tuscany and one less in Florence.    ... everything was perfect, it was the trip of a lifetime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--2nd item-->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="mx-auto" id="third-client-pic">
+                </div>
+                <h5 class="client-name">Al Morales</h5>
+                <p class="inner-font" style="color:#c8c1bd"> The tour guides, Stefano in Tuscany and Gigi in Rome, were charming and really added so much to the experience. I really could go on and on but you already know how wonderful it all is. It really is a beautiful country with kind and beautiful people.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="client-pic-box mx-auto" id="fourth-client-pic">
+
+                </div>
+                <h5 class="client-name">Robert Romano</h5>
+                <p class="inner-font" style="color:#c8c1bd">My family has been using Joe at Fugazi Travel for years! He has booked so many vacations for us - most recently to Costa Rica. I was not traveling with the group and needed to buy my ticket separately, so he graciously helped search for flights/routes that fit my schedule.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--3rd item-->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="mx-auto" id="fifth-client-pic">
+                </div>
+                <h5 class="client-name">Mr. George</h5>
+                <p class="inner-font" style="color:#c8c1bd"> 
+                  I wanted to take this moment to say Thank You for making my and my sons trip to Lourdes a very easy trip. I was very nervous to travel and even more to be in a different country. But honest to God, you made it so easy and stress free. So on behalf of myself and my child, thank you from the bottom of our hearts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="client-pic-box mx-auto" id="sixth-client-pic">
+
+                </div>
+                <h5 class="client-name">Mr. Marisol</h5>
+                <p class="inner-font" style="color:#c8c1bd">I especially wanted to tell you what a great, professional and unbelievable job Erika Chiostri did, in planning and making this trip possible for us. It's employees like her that make Fugazi Travel Agency one of the best. .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--4th item-->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="mx-auto" id="seven-client-pic">
+                </div>
+                <h5 class="client-name">Mr. Christine</h5>
+                <p class="inner-font" style="color:#c8c1bd"> Thanks for all your effort in making our trip to Lourdes so fine. But I'm especially grateful for your extra effort to get me home. Despite the missed connection in Paris, I and my luggage 
+                  made it to Minneapolis three hours later than planned. What a miracle! </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body" style="background-color: #f8f9fa;">
+                <div class="client-pic-box mx-auto" id="eight-client-pic">
+
+                </div>
+                <h5 class="client-name">Nancy Butler</h5>
+                <p class="inner-font" style="color:#c8c1bd">I want to thank you so much for helping us with the Disney trip.  Everyone had a really great trip  - one of the grandkids said he didn't think it was possible to have a better vacation. They did everything they could at least once and I got a "Worlds Greatist Gramma" trophy  presented to me at dinner on the last night.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--customer say-->
+
+<!--tour blogs-->
+<div class="container-fluid text-center ml-auto mb-5" style="background-color: #c8c1bd;">
+  <h1 class="header-font mb-5">From our travel blog</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="tour-spot-pic">
+            <img src="img/a.jpg" alt="first pic" />
+          </div>
+          <p style="letter-spacing: 1px;color:#ccc">TRAVEL</p>
+          <h5 class="header-font">Escape the city today</h5>
+          <p style="color:#c8c1bd" style="text-align: justify;">Is am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built party world...</p>
+
+          <a href="#" style="color:#4e66f8;letter-spacing: 2px;font-weight: bold;">CONTINUE READING<i class="fa fa-long-arrow-right" style="font-size:15px"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="tour-spot-pic">
+            <img src="img/b.jpg" alt="first pic" />
+          </div>
+          <p style="letter-spacing: 1px;color:#ccc">TRAVEL</p>
+          <h5 class="header-font">Autumn fashion tips and tricks</h5>
+          <p style="color:#c8c1bd" style="text-align: justify;">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat vitae, ultricies ege...</p>
+
+          <a href="#" style="color:#4e66f8;letter-spacing: 2px;font-weight: bold;">CONTINUE READING<i class="fa fa-long-arrow-right" style="font-size:15px"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="tour-spot-pic">
+            <img src="img/c.jpg" alt="first pic" />
+          </div>
+          <p style="letter-spacing: 1px;color:#ccc">TRAVEL</p>
+          <h5 class="header-font">Newest photo apps</h5>
+          <p style="color:#c8c1bd" style="text-align: justify;">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibu...</p>
+
+          <a href="#" style="color:#4e66f8;letter-spacing: 2px;font-weight: bold;">CONTINUE READING<i class="fa fa-long-arrow-right" style="font-size:15px"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end tour blogs-->
+<!--footer-->
+<div class="container-fluid mt-5 mb-5">
+  <img src="img/1.jpg" alt="firstImg" class="more-tour-img" />
+  <img src="img/2.jpg" alt="SecondImg" class="more-tour-img" />
+  <img src="img/3.jpg" alt="ThirdImg" class="more-tour-img" />
+  <img src="img/4.jpg" alt="FourthImg" class="more-tour-img" />
+  <img src="img/5.jpg" alt="FifthImg" class="more-tour-img" />
+  <img src="img/6.jpg" alt="SixthImg" class="more-tour-img" />
+  <img src="img/7.jpg" alt="seventhImg" class="more-tour-img" />
+  <img src="img/8.jpg" alt="eight" class="more-tour-img" />
+  <img src="img/9.jpg" alt="nine" class="more-tour-img" />
+</div>
+
+<div class="container-fluid text-center" style="background-color:#f8f9fa;">
+  <div class="row">
+    <div class="col-md-3 mt-5">
+      <h4 class="header-font mb-2">YOUR TRAVEL</h4>
+      <p class="inner-font" style="letter-spacing: 1px;">A New Sky ,A New Life</p>
+      <div class="mt-2">
+        <a href="https://www.facebook.com/gurucharan.maparu.3"><i class="fa fa-facebook ml-3 my-icon text-dark" id="facebook"></i></a>
+        <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en"><i class="fa fa-instagram ml-3 my-icon text-dark" id="insta"></i></a>
+        <a href="https://www.youtube.com/channel/UCaf_qQIZvak2gDGPSODWeRw?view_as=subscriber"><i class="fa fa-youtube ml-3 text-dark my-icon" id="youtube"></i></a>
+        <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter ml-3 my-icon text-dark" id="twitter"></i></a>
+        </div>
+    </div>
+    <div class="col-md-3 mt-5">
+      <h4 class="header-font mb-3">RENTALS</h4>
+
+      <p><a class="anchor text-dark mb-0" href="#">Rooms</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Map on top</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Side map</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">No map</a></p>
+
+    </div>
+    <div class="col-md-3 mt-5">
+      <h4 class="header-font mb-3">PAGES</h4>
+
+      <a class="anchor text-dark mb-0" href="#">Comparison</a>
+      <p><a class="anchor text-dark mb-0" href="#">Team</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Contact</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Pricing</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">Text page</a></p>
+      <p><a class="anchor text-dark mb-0" href="#">F.A.Q.s</a></p>
+
+    </div>
+    <div class="col-md-3 mt-5">
+      <h4 class="header-font">DAILY OFFERS & DISCOUNTS</h4>
+      <p class="inner-font">We have varai spacial offer in every day</p>
+      <form>
+          <input type="email" placeholder="Your Email Address" required class="form-control" />
+            <button type="submit" class="btn btn-info float-right mt-3">
+              SEND
+              <i class="fa fa-send-o" style="font-size:15px"></i>
+            </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--footer-->
+</body>
+</html>
+

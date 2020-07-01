@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body{
+    overflow-x: hidden;
+}
+
+
+/*top button */
+#top-btn{
+    position:fixed;
+    right:20px;
+    bottom:15px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+/*top button*/
+
+.header-font{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.inner-font{
+    font-family: 'Stoke', serif;
+    color:black;
+}
+
+#logo{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color:white;
+}
+
+#nav-bar{
+    box-shadow: 5px 6px 8px #888888;
+}
+
+.jumbotron{
+    background-image: url("../img/help.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:470px;
+}
+
+#txt-head{
+    margin-top:120px;
+    font-weight: bold;
+
+}
+
+.add-icons{
+    width:50px;
+    height:50px;
+    border:1px solid #ccc;
+    background-color: #EAEDFE;
+    border-radius: 50%;
+}
+
+.add-icons i{
+    margin-top:9px;
+}
+
+.card{
+    border:none !important; 
+}
+.card-footer{
+    background-color: none !important;
+}
+
+#send-message-btn:hover{
+    border:none;
+}
+
+#contact{
+    border:1px solid rgb(24, 23, 23);
+    box-shadow: 5px 3px 0px 0px gray;
+    border-radius: 20px;
+}
+
+/*social media icons*/
+
+
+#facebook:hover{
+    background-color: #4F67A4;
+    color:white;
+    border:1px solid #4F67A4;
+}
+#insta:hover{
+    background-color: #ccc;
+    color:rgb(224, 21, 21);
+    border:1px solid #ccc;
+}
+#youtube:hover{
+    background-color: black;
+    color: rgb(196, 46, 46);
+    border:1px solid black;
+}
+#twitter:hover{
+    background-color: #1DA1F2;
+    color: rgb(233, 223, 223);
+    border:1px solid #1DA1F2;
+}
+/*team social site*/
+/*my icon*/
+.my-icon{
+    width:40px;
+    height:40px;
+    border:1px solid #ccc;
+    padding:5px;
+    margin-top:10px;
+    font-size:30px !important;
+}

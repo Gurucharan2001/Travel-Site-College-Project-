@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/attraction.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Fredoka+One|Playfair+Display+Stoke&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css" >
+    <link rel="stylesheet" href="css/slick.css" >
+    <script src="js/effect.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+<body>
+    <button class="btn btn-primary" id="top-btn">
+        <i class="fa fa-chevron-up"></i><br />Back to Top
+    </button>
+    <!--Nav  bar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light mt-0 sticky-top mb-3" id="nav-bar" style="z-index: 3000;">
+        <a href="index.html" class="navbar-brand">
+            <img src="../img/myLogo.png" alt="logo" id="logo" />
+                Your Travels
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-slider">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-slider">
+            <ul class="navbar-nav text-dark float-left ml-3">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="attraction.html" class="nav-link" id="attraction">Attractions</a></li>
+                <li class="nav-item"><a href="../contact/contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="../Signup/signup.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="../Login/login.html" class="nav-link">Sign In</a></li>
+            </ul>
+            <ul class="navbar-nav text-light ml-auto">
+                <li class="nav-item d-none" id="search-ele">
+                    <form>
+                        <div class="input-group mt-2">
+                            <input type="search" name="search" class="form-control border border-danger border-right-0" placeholder="Search Here" />
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-danger text-light">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <i class="fa fa-search text-light" style="font-size:25px" id="search"></i>
+                    <i class="fa fa-close text-light d-none" style="font-size:25px" id="close"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav bar-->
+    <!--body-->
+    <div class="container-fluid jumbotron jumbotron-fluid text-center mb-5">
+        <h1 class="header-font text-light" id="head-txt">Travel Guides</h1>
+        <div id="search-bar-con" class="mx-auto">
+            <form>
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Destination, attraction, hotel, etc" />
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-warning text-light btn text-center"  id="search-icon-con">
+                            <i class="fa fa-search" style="font-size:40px;"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--body-->
+
+    <div class="container-fluid text-center mt-5 mb-5">
+        <h1 class="header-font mb-3">Popular Destinations</h1>
+        <div class="container mb-5">
+            <ul class="nav nav-tabs mx-auto" id="country">
+                <li class="nav-item"><a href="#asia" class="nav-link active" data-toggle="tab">Asia</a></li>
+                <li class="nav-item"><a href="#europe" class="nav-link" data-toggle="tab">Europe</a></li>
+                <li class="nav-item"><a href="#north" class="nav-link" data-toggle="tab">North America</a></li>        
+                <li class="nav-item"><a href="#africa" class="nav-link" data-toggle="tab">Afirca</a></li>
+                <li class="nav-item"><a href="#india" class="nav-link" data-toggle="tab">India</a></li>
+            </ul>
+            <div class="tab-content mt-2">
+                <!--asia-->
+                <div id="asia"  class="tab-pane active">
+                    <div class="row mb-3">
+                        <div class="col-md-4 site-seen">
+                            <h3  class="header-font   ">TOKYO</h3>
+                            <img src="img/asia/tokyo.jpg" alt="goa" style="background-size:cover" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">SEOUL</h3>
+                            <img src="img/asia/seoul.jpg" alt="goldentemple" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">SANYA</h3>
+                            <img src="img/asia/sanya.jpg" alt="kolkata" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">HONGKONG</h3>
+                            <img src="img/asia/hongkong.jpg" alt="hariduar" />
+                        </div>
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font">BEIJING</h3>
+                            <img src="img/asia/beijing.jpg" alt="mumbai" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font">BANGKOK</h3>
+                            <img src="img/asia/bangkok.jpg" alt="tajmahal" />
+                        </div>
+                    </div>
+                    <a href="#" class="float-right mt-3 inner-font" style="font-size: 20px;">Watch More Touriest Place In ASIA<i class="fa fa-long-arrow-right" style="font-size: 15px;"></i></a>
+                </div>
+                <!--asia-->
+                <!--europe-->
+                <div id="europe"  class="tab-pane">
+                    <div class="row mb-3">
+                        <div class="col-md-4 site-seen">
+                            <h3  class="header-font   ">LONDON</h3>
+                            <img src="img/europe/london.jpg" alt="goa" style="background-size:cover" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">ROM</h3>
+                            <img src="img/europe/rome.jpg" alt="goldentemple" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">AMSTERDAM</h3>
+                            <img src="img/europe/amsterdam.jpg" alt="kolkata" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">PARIS</h3>
+                            <img src="img/europe/paris.jpg" alt="hariduar" />
+                        </div>
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font">MOSCOW</h3>
+                            <img src="img/europe/moscow.jpg" alt="mumbai" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font">OSLO</h3>
+                            <img src="img/europe/oslo.jpg" alt="tajmahal" />
+                        </div>
+                    </div>
+                    <a href="#" class="float-right mt-3 inner-font" style="font-size: 20px;">Watch More Touriest Place In EUROPE<i class="fa fa-long-arrow-right" style="font-size: 15px;"></i></a>
+                </div>
+                <!--europe-->
+                <!--north america-->
+                <div id="north"  class="tab-pane">
+                    <div class="row mb-3">
+                        <div class="col-md-4 site-seen">
+                            <h3  class="header-font   ">NEW YORK</h3>
+                            <img src="img/north/newYork.jpg" alt="goa" style="background-size:cover" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">SAN FRANCISCO</h3>
+                            <img src="img/north/sanFrancisco.jpg" alt="goldentemple" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">SAN DIEGO</h3>
+                            <img src="img/north/sanDiego.jpg" alt="kolkata" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">ORLANDO</h3>
+                            <img src="img/north/orlando.webp" alt="hariduar" />
+                        </div>
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font">CANCUN</h3>
+                            <img src="img/north/cancun.jpg" alt="mumbai" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font">LAS VEGAS</h3>
+                            <img src="img/north/lasVegas.jpg" alt="tajmahal" />
+                        </div>
+                    </div>
+                    <a href="#" class="float-right mt-3 inner-font" style="font-size: 20px;">Watch More Touriest Place In NORTH AMERICA<i class="fa fa-long-arrow-right" style="font-size: 15px;"></i></a>
+                </div>
+                <!--north america-->
+                <!--touriest sopt africa-->
+                <div id="africa"  class="tab-pane">
+                    <div class="row mb-3">
+                        <div class="col-md-4 site-seen">
+                            <h3  class="header-font">NAIROBI</h3>
+                            <img src="img/africa/nairobi.jpg" alt="goa" style="background-size:cover" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">LAGOS</h3>
+                            <img src="img/africa/lagos.jpg" alt="goldentemple" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">CAPE TOWN</h3>
+                            <img src="img/africa/capeTown.jpg" alt="kolkata" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">CAIRO</h3>
+                            <img src="img/africa/cairo.webp" alt="hariduar" />
+                        </div>
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">ADDIS ABABA</h3>
+                            <img src="img/africa/addisAbaba.jpg" alt="mumbai" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font    text-center">ACCRA</h3>
+                            <img src="img/africa/accra.jpg" alt="tajmahal" />
+                        </div>
+                    </div>
+                    <a href="#" class="float-right mt-3 inner-font" style="font-size: 20px;">Watch More Touriest Place In AFRICA<i class="fa fa-long-arrow-right" style="font-size: 15px;"></i></a>
+                </div>
+                <!--touriest sopt africa-->
+                <!--touriest sopt india-->
+                <div id="india" class="tab-pane">
+                    <div class="row mb-3">
+                        <div class="col-md-4 site-seen">
+                            <h3  class="header-font   ">GOA</h3>
+                            <img src="img/india/GOA.jpg" alt="goa" style="background-size:cover" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">AMRITSAR</h3>
+                            <img src="img/india/goldenTemp.jpg" alt="goldentemple" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font   ">KOLKATA</h3>
+                            <img src="img/india/kolkata.jpg" alt="kolkata" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font">HARIDUAR</h3>
+                            <img src="img/india/hariduar.jpg" alt="hariduar" />
+                        </div>
+                        <div class="col-md-4 site-seen ">
+                            <h3 class="header-font   ">MUMBAI</h3>
+                            <img src="img/india/mumbai.jpg" alt="mumbai" />
+                        </div>
+                        <div class="col-md-4 site-seen">
+                            <h3 class="header-font    text-center">DELLHI</h3>
+                            <img src="img/india/tajmahal.jpg" alt="tajmahal" />
+                        </div>
+                    </div>
+                    <a href="#" class="float-right mt-3" style="font-size: 20px;">Watch More Touriest Place In INDIA<i class="fa fa-long-arrow-right" style="font-size: 15px;"></i></a>
+                </div>
+                <!--touriest sopt india-->
+            </div>
+        </div>  
+    </div>
+
+    <!--inspiration-->
+    <div class="container-fluid mt-5 text-center" style="overflow: hidden;">
+        <h1 class="header-font mb-4">Inspiration</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 wow fadeInLeft">
+                    <img src="img/a.jpg" alt="a" />
+                    <div class="mx-auto inspiration-head">
+                        <h3 class="header-font text-light">Lonly Planet</h3>
+                        <h5 class="inner-font text-light">Best Asia-Pacific Travel Destinations</h5>
+                    </div> 
+                </div>
+                <div class="col-md-8">
+                    <div class="row mb-2">
+                        <div class="col-md-6 wow slideInUp">
+                            <img src="img/e.jpg" alt="e" />
+                            <div class="mx-auto travel-type">
+                                <h3 class="header-font text-light">Budget Travel</h3>
+                                <h5 class="inner-font text-light">Top Budget Destinations</h5>
+                            </div> 
+                        </div>
+                        <div class="col-md-6 wow slideInDown">
+                            <img src="img/c.jpg" alt="inspiration" />
+                            <div class="mx-auto travel-type">
+                                <h3 class="header-font text-light">Charming Towns</h3>
+                                <h5 class="inner-font text-light">World most Beautiful Small Towns</h5>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6 wow slideInRight">
+                            <img src="img/b.jpg" alt="inspiration" />
+                            <div class="mx-auto travel-type">
+                                <h3 class="header-font text-light">Sunshine Coast</h3>
+                                <h5 class="inner-font text-light">Top Island Vacation Destinations</h5>
+                            </div> 
+                        </div>
+                        <div class="col-md-6 wow slideInLeft">
+                            <img src="img/d.png" alt="inspiration" />
+                            <div class="mx-auto travel-type">
+                                <h3 class="header-font text-light">Family Trip</h3>
+                                <h5 class="inner-font text-light">Top Family Vacation Destinations</h5>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--inspiration-->
+    <!--Recommended Attractions-->
+            <h1 class="header-font mt-5 mb-5 text-center">Recommended Attractions</h1>
+            <div class="recommended-attractions-con slider">
+                <div>
+                    <a href="#">
+                        <img src="img/nature.jpeg" alt="nature" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >NATURE</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/lifestyle.jpg" alt="lifestyle" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >LIFESTYLE</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/exhibition.jpg" alt="exhibition" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >EXHIBITION</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/architecture.jpeg" alt="architecture" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt  header-font" >ARCHITECTURE</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/historical.jpg" alt="historical" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >HISTORICAL</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/religious.jpg" alt="religious" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >RELIGIOUS</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/park.jpg" alt="park" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >PARKS</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/siteseeing.jpg" alt="nature" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >SITESEEING</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/sports.jpg" alt="nature" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >SPORTS</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/festivals.jpg" alt="festivals" />
+                    </a>
+                    <h4 class="text-center text-light slider-txt header-font" >FESTIVALS</h4>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/night.jpg" alt="night" />
+                    </a>
+                    <h4 class="text-center text-light  header-font" >NIGHTLIFE</h4>
+                </div>
+            </div>
+    <!--Recommended Attractions-->
+
+    <!--footer-->
+<div class="container-fluid text-center mt-5" style="background-color:#f8f9fa;" >
+    <div class="row">
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-2">YOUR TRAVEL</h4>
+        <p class="inner-font" style="letter-spacing: 1px;">A New Sky ,A New Life</p>
+        <div class="mt-2">
+          <a href="https://www.facebook.com/gurucharan.maparu.3"><i class="fa fa-facebook ml-3 my-icon text-dark" id="facebook"></i></a>
+          <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en"><i class="fa fa-instagram ml-3 my-icon text-dark" id="insta"></i></a>
+          <a href="https://www.youtube.com/channel/UCaf_qQIZvak2gDGPSODWeRw?view_as=subscriber"><i class="fa fa-youtube ml-3 text-dark my-icon" id="youtube"></i></a>
+          <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter ml-3 my-icon text-dark" id="twitter"></i></a>
+          </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-3">RENTALS</h4>
+  
+        <p><a class="anchor text-dark mb-0" href="#">Rooms</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Map on top</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Side map</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">No map</a></p>
+  
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font mb-3">PAGES</h4>
+  
+        <a class="anchor text-dark mb-0" href="#">Comparison</a>
+        <p><a class="anchor text-dark mb-0" href="#">Team</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Contact</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Pricing</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Room detail</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">Text page</a></p>
+        <p><a class="anchor text-dark mb-0" href="#">F.A.Q.s</a></p>
+  
+      </div>
+      <div class="col-md-3 mt-5">
+        <h4 class="header-font">DAILY OFFERS & DISCOUNTS</h4>
+        <p class="inner-font">We have varai spacial offer in every day</p>
+        <form>
+            <input type="email" placeholder="Your Email Address" required class="form-control" />
+              <button type="submit" class="btn btn-info float-right mt-3">
+                SEND
+                <i class="fa fa-send-o" style="font-size:15px"></i>
+              </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--footer-->
+
+  
+  <script>
+    new WOW().init();
+</script>
+</body>
+</html>
